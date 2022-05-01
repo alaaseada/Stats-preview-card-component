@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:hsl(233, 47%, 7%);
+    font: 14px 'Inter', sans-serif;
+}
+.card{
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 250px;
+}
+.design{
+    width: 100%;
+    height: 200px;
+    background: hsl(277, 26%, 53%) url(./images/image-header-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+.heading,.stat p:first-of-type{
+    color: white;
+    font-weight: 700;
+}
+.main-paragraph{
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.stat p:not(:first-of-type){
+    color:hsla(0, 0%, 100%, 0.6);
+    font: small-caps 15px 'Lexend Deca', sans-serif;
+    margin-bottom: 20px;
+}
+.heading span{
+    color: hsl(277, 64%, 61%);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.heading, .main-paragraph{
+    padding: 10px;
+    margin: 10px;
+}
+.stat p:first-of-type{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.heading{
+    font-size: 21px;
+}
+
+@media (min-width:1000px){
+    .card{
+        width: 60%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, auto);
+    }
+    .design{
+        grid-area: 1 / 2 / span 3 / 2;
+        height: auto;
+        border-radius: 0px 10px 10px 0px;
+        -webkit-border-radius: 0px 10px 10px 0px;
+        -moz-border-radius: 0px 10px 10px 0px;
+        -ms-border-radius: 0px 10px 10px 0px;
+        -o-border-radius: 0px 10px 10px 0px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-around;
+    }
+    .wrapper{
+        margin: 30px 20px;
+    }
+}
