@@ -74,6 +74,8 @@ body{
         grid-template-rows: repeat(3, auto);
     }
     .design{
+        background: hsl(277, 26%, 53%) url(./images/image-header-desktop.jpg) no-repeat;
+        background-size: cover;
         grid-area: 1 / 2 / span 3 / 2;
         height: auto;
         border-radius: 0px 10px 10px 0px;
